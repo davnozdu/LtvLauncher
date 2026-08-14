@@ -57,6 +57,8 @@ The following commands were tested on Chromecast with Google TV only and may dif
 $ adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
 # com.google.android.tungsten.setupwraith re-enables the default launcher, so disable it too
 $ adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
+# Delete Google acctounts
+$ adb shell am start -a android.settings.USER_SETTINGS
 ```
 
 #### Re-enable default launcher
