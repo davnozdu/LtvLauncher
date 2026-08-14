@@ -61,7 +61,7 @@ $ adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
 
 #### Re-enable default launcher
 ```shell
-$ adb shell pm enable com.google.android.apps.tv.launcher
+$ adb shell pm enable cz.smotrim.launcher
 $ adb shell pm enable com.google.android.tungsten.setupwraith
 ```
 
