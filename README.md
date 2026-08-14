@@ -54,14 +54,14 @@ The following commands were tested on Chromecast with Google TV only and may dif
 #### Disable default launcher
 ```shell
 # Disable com.google.android.apps.tv.launcherx (default launcher on CCwGTV)
-$ adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
+$ adb shell pm disable-user --user 0 com.google.android.apps.tv.launcher
 # com.google.android.tungsten.setupwraith re-enables the default launcher, so disable it too
 $ adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
 ```
 
 #### Re-enable default launcher
 ```shell
-$ adb shell pm enable cz.smotrim.launcher
+$ adb shell pm enable com.google.android.apps.tv.launcher
 $ adb shell pm enable com.google.android.tungsten.setupwraith
 ```
 
